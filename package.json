@@ -1,0 +1,27 @@
+{
+  "name": "nerdnotes",
+  "version": "1.0.0",
+  "description": "nerdNotes MERN App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marksayers46/nerdNotes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marksayers46/nerdNotes/issues"
+  },
+  "homepage": "https://github.com/marksayers46/nerdNotes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
