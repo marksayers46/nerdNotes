@@ -1,7 +1,7 @@
 {
   "name": "nerdnotes",
   "version": "1.0.0",
-  "description": "nerdNotes MERN App",
+  "description": "nerdNotes-for a better project tracking & customer service",
   "main": "server.js",
   "scripts": {
     "test": "node server",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/marksayers46/nerdNotes#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "date-fns": "^2.29.3",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
