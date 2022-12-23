@@ -8,7 +8,7 @@ app.use('/', express.static(path.join(__dirname, '/public')))
 
 app.use('/', require('./routes/root'))
 
-// 404 for catching all other routes use *
+// 404 use "*" for catching all other routes that we may not be handling
 app.all('*', (req, res) => {
     res.status(404)
     if (req.accepts('html')) {
