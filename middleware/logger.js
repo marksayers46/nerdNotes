@@ -4,6 +4,7 @@ const fs = require('fs')
 const fsPromises = require('fs').promises
 const path = require('path')
 
+// helper function
 const logEvents = async (message, logFileName) => {
     const dateTime = format(new Date(), 'yyyyMMdd\tHH:mm:ss')
     const logItem = `${dateTime}\t${uuid()}\t${message}\n`
@@ -18,6 +19,7 @@ const logEvents = async (message, logFileName) => {
     }
 }
 
+// logger middleware function
 const logger = (req, res, next) => {
     logEvents(`${req.method}\t${req.url}\t${req.headers.origin}`, 'reqLog.log')
     console.log(`${req.method} ${req.path}`)
