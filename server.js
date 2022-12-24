@@ -5,6 +5,7 @@ const { logger } = require('./middleware/logger')
 const { errorHandler } = require('./middleware/errorHandler')
 const PORT = process.env.PORT || 3500
 
+// logger middleware function
 app.use(logger)
 
 // middleware for receiving & parsing json
@@ -27,6 +28,8 @@ app.all('*', (req, res) => {
         res.type('txt'.send('404 Not Found'))
     }
 })
+//  errorHandler middleware
+app.use(errorHandler)
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
